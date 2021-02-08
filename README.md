@@ -1,18 +1,18 @@
 # As part of a small organization i want to give my users the ability to organize and exchange notes!
 
 # Project dependencies
-Python version : 3.8.6
-Django : 3.1.4
-DRF : 3.12.2
+- Python version : 3.8.6
+- Django : 3.1.4
+- DRF : 3.12.2
 
 # Virtual environment
-$ python3.8.6 -m venv venv (Note: 'python3.8-dev' and 'python3.8-venv' must be install)
-$ source venv/bin/activate 
-$ pip install -r requirements.txt
-$ cd notes_sharing
-$ ./manage.py migrate
-$ ./manage.py createsuperuser
-$ ./manage.py runserver
+- $ python3.8.6 -m venv venv (Note: 'python3.8-dev' and 'python3.8-venv' must be install)
+- $ source venv/bin/activate 
+- $ pip install -r requirements.txt
+- $ cd notes_sharing
+- $ ./manage.py migrate
+- $ ./manage.py createsuperuser
+- $ ./manage.py runserver
 
 # Note: 
   To access any api end point user must be logged-in with admin site.
