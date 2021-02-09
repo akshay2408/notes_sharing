@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     #APPS
     'notes_sharing.apps.groups',
     'notes_sharing.apps.notes',
-    'notes_sharing.apps.users',
 ]
 
 MIDDLEWARE = [
@@ -126,14 +125,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#Custom user model
-AUTH_USER_MODEL = 'users.User'
-
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
-        "rest_framework.authentication.SessionAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
     ),
     "DEFAULT_PERMISSION_CLASSES": (
         "rest_framework.permissions.IsAuthenticated",
     )
 }
+

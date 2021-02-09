@@ -1,7 +1,7 @@
 from rest_framework.test import APITestCase
 from notes_sharing.apps.notes.models import Notes
 from rest_framework import status
-from notes_sharing.apps.users.models import User
+from django.contrib.auth.models import User
 from notes_sharing.apps.test_data import TEST_DATA
 
 GROUP_ENDPOINT = '/notes_sharing/api/v1/groups/'
@@ -11,7 +11,7 @@ USER_ENDPOINT = '/notes_sharing/api/v1/users/'
 class NotesTestCase(APITestCase):
   def setUp(self):
     self.superuser = User.objects.create_superuser('admin@snow.com', 'adminpassword')
-    self.client.login(username='admin@snow.com', password='adminpassword')
+    self.client.force_authenticate(user=self.superuser)
     for user in TEST_DATA["users"]:
       self.client.post(USER_ENDPOINT, user ,format='json')
     for group in TEST_DATA["groups"]:

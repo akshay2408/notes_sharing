@@ -1,6 +1,6 @@
 from rest_framework.viewsets import ModelViewSet 
 from .serializers import UserSerializer
-from .models import User
+from django.contrib.auth.models import User
 from notes_sharing.apps.groups.serializers import GroupSerializer, NotesSerializer
 from rest_framework.decorators import action
 from rest_framework.response import Response

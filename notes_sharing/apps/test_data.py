@@ -3,19 +3,19 @@ TEST_DATA = {
       {
           "first_name": "User",
           "last_name": "Test",
-          "email": "UserTest@gmail.com",
+          "username": "UserTest@gmail.com",
           "password":"12345678"
       },
       {
           "first_name": "User2",
           "last_name": "Test2",
-          "email": "UserTest2@gmail.com",
+          "username": "UserTest2@gmail.com",
           "password":"12345678"
       },
       {
           "first_name": "User3",
           "last_name": "Test3",
-          "email": "UserTest3@gmail.com",
+          "username": "UserTest3@gmail.com",
           "password":"12345678"
       }
   ],

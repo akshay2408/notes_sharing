@@ -38,3 +38,6 @@
 
 # To Run TestCases use below command : 
   $ ./manage.py test
+
+##Authentication: 
+Token
