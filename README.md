@@ -7,7 +7,7 @@
 - DRF : 3.12.2
 
 # Virtual environment : 
-- $ python3.8.6 -m venv venv (Note: 'python3.8-dev' and 'python3.8-venv' must be install)
+- $ python3.8 -m venv venv (Note: 'python3.8-dev' and 'python3.8-venv' must be install)
 - $ source venv/bin/activate 
 - $ pip install -r requirements.txt
 
